@@ -33,5 +33,6 @@ int main() {
 	else {
 		printf("Not a triangle");
 	}
+	getchar();
 	return 0;
 }

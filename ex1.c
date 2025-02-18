@@ -27,12 +27,21 @@ double findArea(double r) {
 	return area;
 }
 
+void result(double r) {
+	if(r <= 0) {
+		printf("Not valid");
+	}
+	else {
+		printf("Diameter = %.2lf\n", findDiameter(r));
+		printf("Circumference = %.2lf\n", findCircumference(r));
+		printf("Area = %.2lf\n", findArea(r));
+	}
+}
+
 int main() {
-	int r;
+	double r;
 	r = inputRadius();
-	printf("Diameter = %.2lf\n", findDiameter(r));
-	printf("Circumference = %.2lf\n", findCircumference(r));
-	printf("Area = %.2lf\n", findArea(r));
+	result(r);
 	getchar();
 	return 0;
 }

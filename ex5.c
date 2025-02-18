@@ -4,7 +4,7 @@
 
 int inputNum() {
 	int n;
-	printf("Enter number:");
+	printf("Enter a natural number: ");
 	scanf("%d", &n);
 	return n;
 }
@@ -31,12 +31,15 @@ void printNPrimes(int n) {
         }
         i ++;
     }
+    if (count == 0) {
+    	printf(" No number");
+	}
 }
-
 
 int main() {
 	int n;
 	n = inputNum();
 	printNPrimes(n);
+	getchar();
 	return 0;
 }

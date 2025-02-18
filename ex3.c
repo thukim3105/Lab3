@@ -4,7 +4,7 @@
 
 int inputNum() {
     int n;
-    printf("Enter number: ");
+    printf("Enter integer: ");
     scanf("%d", &n);
     return n;
 }
@@ -24,6 +24,10 @@ int findMaxDigit(int num) {
 int main() {
 	int num;
 	num = inputNum();
+	if(num < 0) {
+		num = -num;
+	}
 	printf("%d", findMaxDigit(num));
+	getchar();
 	return 0;
 }
